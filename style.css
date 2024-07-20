@@ -1,0 +1,178 @@
+body{
+    background: rgb(0, 0, 0);
+}
+
+#face{
+    height: 200px;
+    width: 200px;
+    background: linear-gradient(40deg,rgb(226, 109, 226),white,rgb(48, 45, 45));
+    border-top-right-radius: 50%;
+    border-top-left-radius: 50%;
+    margin: auto;
+    margin-top: 70px;
+  
+
+}
+
+#larm,#rarm{
+    height: 100px;
+    width: 25px;
+    background: linear-gradient(40deg,rgb(226, 109, 226),white,rgb(48, 45, 45));    
+    margin-top: 15px;
+    border-radius: 50px;
+}
+
+#centre{
+    height: 200px;
+    width: 200px;
+    background: linear-gradient(40deg,rgb(226, 109, 226),white,rgb(48, 45, 45));
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+
+}
+#body{
+    width: 300px;
+    justify-content: space-evenly;
+    margin: auto;
+    display: flex;
+    margin-top: 15px;
+}
+#lleg,#rleg{
+    height: 130px;
+    width: 30px;
+    background: linear-gradient(40deg,rgb(226, 109, 226),white,rgb(48, 45, 45));
+    margin: auto;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+#leg{
+    width: 230px;
+    display: flex;
+    margin: auto;
+    margin-top: -20px;
+    justify-content: space-evenly;
+}
+
+#leye,#reye{
+    height: 25px;
+    width: 25px;
+    background: black;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 50%;
+}
+
+#eyes{
+    display: flex;
+    margin: auto;
+}
+#main{
+    height: 600px;
+    width: 350px;
+    border: 3px solid white;
+    margin: auto;
+    margin-top: 50px;
+    padding-top: 10px;
+
+}
+#main:hover #face{
+    width: 250px;
+    background: linear-gradient(90deg,rgb(185, 142, 142),rgb(163, 163, 197rgb(29, 32, 32)6));
+    animation: changeface 1s 10;
+}
+
+@keyframes changeface{
+    0%{
+        transform: translateX(50px);
+       
+    }
+    100%{
+        transform: translateX(-50px);
+    }
+}
+
+
+#main:hover #larm{
+    background: violet;
+    animation: changelarm 1s 10;
+}
+@keyframes changelarm{
+    0%{
+        transform: rotate(0deg);
+        transform-origin: top center;
+    }
+    50%{
+        transform: rotate(110deg);
+        
+    }
+
+}
+
+#main:hover #rarm{
+    background: violet;
+    animation: changerarm  1s 10;
+}
+@keyframes changerarm{
+    0%{
+        transform: rotate(0deg);
+        transform-origin: top center;
+    }
+    50%{
+        transform: rotate(150deg);
+        
+    }
+}
+#main:hover #lleg{
+
+    animation: changelleg 1s 10;
+}
+@keyframes changelleg{
+    0%{
+        transform: rotate(30deg);
+        
+    }
+    50%{
+        transform: rotate(-30deg);
+    }
+}
+
+#main:hover #rleg{
+
+    animation: changelleg 1s 10;
+}
+@keyframes changerleg{
+    0%{
+        transform: rotate(30deg);
+        
+    }
+    50%{
+        transform: rotate(-30deg);
+    }
+}#main:hover #centre{
+    background: linear-gradient(rgb(17, 124, 212),rgb(192, 192, 192),hot rgb(216, 126, 211));
+    animation: changerarm  1s 10;
+    border-radius: 20%;
+
+    
+}
+@keyframes changecentre{
+    0%{
+        transform: rotate(15deg);
+        transform-origin: top center;
+    }
+    50%{
+        transform: rotate(-15deg);
+        
+    }100%{
+        transform: rotate(15deg);
+        
+    }
+}
+h1{
+    color: chartreuse;
+    text-align: center;
+    font-size: 50px;
+    font-style: italic;
+}
